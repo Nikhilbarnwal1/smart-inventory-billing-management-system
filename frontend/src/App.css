@@ -400,6 +400,8 @@ nav {
     grid-template-columns: 1fr;
   }
 }
+
+
 /* =========================================================
    SALES PAGE
    ========================================================= */
@@ -470,12 +472,15 @@ nav {
     grid-template-columns: 1fr;
   }
 }
+
+
 /* =========================================================
-   SALES PAGE - PREVIOUS SALES BUTTON
+   SALES HISTORY TOGGLE BUTTONS
    ========================================================= */
 
-.page > button {
+.sales-history-toggle-button {
   display: block;
+  width: fit-content;
   margin: 0 auto;
   padding: 11px 24px;
   border: none;
@@ -487,9 +492,11 @@ nav {
   cursor: pointer;
 }
 
-.page > button:hover {
+.sales-history-toggle-button:hover {
   background: #334155;
 }
+
+
 /* =========================================================
    CUSTOMERS PAGE
    ========================================================= */
@@ -557,9 +564,11 @@ nav {
     grid-template-columns: 1fr;
   }
 }
-/* SALES SUCCESS AND ERROR MESSAGE */
 
-/* SALES SUCCESS AND ERROR MESSAGE */
+
+/* =========================================================
+   SALES SUCCESS AND ERROR MESSAGE
+   ========================================================= */
 
 .success-message,
 .error-message {
@@ -584,7 +593,11 @@ nav {
   color: #c62828;
   border: 1px solid #ef9a9a;
 }
-/* SALES SUBMIT SECTION */
+
+
+/* =========================================================
+   SALES SUBMIT SECTION
+   ========================================================= */
 
 .sale-submit-section {
   grid-column: 1 / -1;
@@ -602,4 +615,38 @@ nav {
   width: 100%;
   margin: 12px 0 0;
   box-sizing: border-box;
+}
+/* =========================================================
+   CUSTOMER SALES HISTORY SELECTOR
+   ========================================================= */
+
+.customer-history-section {
+  text-align: center;
+}
+
+.customer-history-section label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #475569;
+}
+
+.customer-history-section select {
+  display: block;
+  width: 300px;
+  max-width: 100%;
+  padding: 11px 12px;
+  margin: 0 auto;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font-size: 14px;
+  outline: none;
+  background: white;
+}
+
+.customer-history-section select:focus {
+  border-color: #2563eb;
 }
